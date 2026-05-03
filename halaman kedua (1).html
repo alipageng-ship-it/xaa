@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Promosi | Lokal-Pedia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 pb-10">
+
+    <header class="bg-white p-4 flex items-center gap-4 border-b sticky top-0 z-10">
+        <button class="text-gray-600"><i class="fas fa-arrow-left text-lg"></i></button>
+        <h1 class="text-lg font-bold text-gray-800">Buat Promosi Baru</h1>
+    </header>
+
+    <main class="p-5 max-w-md mx-auto">
+        
+        <section class="mb-8">
+            <label class="block text-sm font-bold text-gray-700 mb-3">Foto Produk/Dagangan</label>
+            <div class="border-2 border-dashed border-orange-300 rounded-2xl p-8 flex flex-col items-center justify-center bg-orange-50 transition-all hover:bg-orange-100 cursor-pointer">
+                <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white mb-3 shadow-lg">
+                    <i class="fas fa-camera text-xl"></i>
+                </div>
+                <p class="text-xs text-orange-600 font-semibold text-center">Klik untuk ambil foto atau pilih dari galeri</p>
+                <p class="text-[10px] text-gray-400 mt-1 text-center italic">Tips: Gunakan cahaya terang agar jualan makin laku!</p>
+            </div>
+        </section>
+
+        <section class="space-y-4 mb-8">
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-1">Nama Produk</label>
+                <input type="text" placeholder="Contoh: Sate Ayam Madura Cak To" class="w-full p-3 rounded-xl border border-gray-200 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none text-sm bg-white">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1">Harga (Rp)</label>
+                    <input type="number" placeholder="15.000" class="w-full p-3 rounded-xl border border-gray-200 focus:border-orange-500 outline-none text-sm bg-white">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1">Kategori</label>
+                    <select class="w-full p-3 rounded-xl border border-gray-200 focus:border-orange-500 outline-none text-sm bg-white appearance-none">
+                        <option>Kuliner</option>
+                        <option>Jasa</option>
+                        <option>Sembako</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-1">Pesan Promosi (Kata-kata Manis)</label>
+                <textarea rows="3" placeholder="Contoh: Beli hari ini diskon 20%! Sate empuk bumbu meresap..." class="w-full p-3 rounded-xl border border-gray-200 focus:border-orange-500 outline-none text-sm bg-white"></textarea>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <label class="block text-sm font-bold text-gray-700 mb-3">Pilih Gaya Poster (Otomatis)</label>
+            <div class="flex gap-3 overflow-x-auto pb-2">
+                <div class="min-w-[120px] h-20 bg-orange-500 rounded-xl flex items-center justify-center text-white border-4 border-orange-200">
+                    <span class="text-[10px] font-bold">Ceria & Terang</span>
+                </div>
+                <div class="min-w-[120px] h-20 bg-gray-800 rounded-xl flex items-center justify-center text-white">
+                    <span class="text-[10px] font-bold">Elegan/Malam</span>
+                </div>
+                <div class="min-w-[120px] h-20 bg-green-500 rounded-xl flex items-center justify-center text-white">
+                    <span class="text-[10px] font-bold">Segar (Sayuran)</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="space-y-3">
+            <button class="w-full bg-orange-500 text-white font-bold py-4 rounded-2xl shadow-lg shadow-orange-200 flex items-center justify-center gap-2 active:scale-95 transition-all">
+                <i class="fas fa-bullhorn"></i> Siarkan Promosi Sekarang
+            </button>
+            <button class="w-full bg-white border border-gray-200 text-gray-400 py-3 rounded-2xl text-sm font-semibold">
+                Simpan Sebagai Draft
+            </button>
+        </div>
+
+    </main>
+
+</body>
+</html>
